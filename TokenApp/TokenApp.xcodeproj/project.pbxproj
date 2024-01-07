@@ -13,7 +13,19 @@
 		44CA09922B4B3FD700E150DC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44CA09902B4B3FD700E150DC /* Main.storyboard */; };
 		44CA09942B4B3FDA00E150DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44CA09932B4B3FDA00E150DC /* Assets.xcassets */; };
 		44CA09972B4B3FDA00E150DC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44CA09952B4B3FDA00E150DC /* LaunchScreen.storyboard */; };
+		44CA099F2B4B45BD00E150DC /* Tokenizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44CA099E2B4B45BD00E150DC /* Tokenizer.swift */; };
+		44CA09A72B4B4B2000E150DC /* TokenAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44CA09A62B4B4B2000E150DC /* TokenAppTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		44CA09A82B4B4B2000E150DC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 44CA097F2B4B3FD700E150DC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 44CA09862B4B3FD700E150DC;
+			remoteInfo = TokenApp;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		44CA09872B4B3FD700E150DC /* TokenApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TokenApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,10 +36,20 @@
 		44CA09932B4B3FDA00E150DC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		44CA09962B4B3FDA00E150DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		44CA09982B4B3FDA00E150DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		44CA099E2B4B45BD00E150DC /* Tokenizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tokenizer.swift; sourceTree = "<group>"; };
+		44CA09A42B4B4B2000E150DC /* TokenAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TokenAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		44CA09A62B4B4B2000E150DC /* TokenAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenAppTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		44CA09842B4B3FD700E150DC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44CA09A12B4B4B2000E150DC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,6 +63,7 @@
 			isa = PBXGroup;
 			children = (
 				44CA09892B4B3FD700E150DC /* TokenApp */,
+				44CA09A52B4B4B2000E150DC /* TokenAppTests */,
 				44CA09882B4B3FD700E150DC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +72,7 @@
 			isa = PBXGroup;
 			children = (
 				44CA09872B4B3FD700E150DC /* TokenApp.app */,
+				44CA09A42B4B4B2000E150DC /* TokenAppTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -63,8 +87,17 @@
 				44CA09932B4B3FDA00E150DC /* Assets.xcassets */,
 				44CA09952B4B3FDA00E150DC /* LaunchScreen.storyboard */,
 				44CA09982B4B3FDA00E150DC /* Info.plist */,
+				44CA099E2B4B45BD00E150DC /* Tokenizer.swift */,
 			);
 			path = TokenApp;
+			sourceTree = "<group>";
+		};
+		44CA09A52B4B4B2000E150DC /* TokenAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				44CA09A62B4B4B2000E150DC /* TokenAppTests.swift */,
+			);
+			path = TokenAppTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -87,6 +120,24 @@
 			productReference = 44CA09872B4B3FD700E150DC /* TokenApp.app */;
 			productType = "com.apple.product-type.application";
 		};
+		44CA09A32B4B4B2000E150DC /* TokenAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 44CA09AA2B4B4B2000E150DC /* Build configuration list for PBXNativeTarget "TokenAppTests" */;
+			buildPhases = (
+				44CA09A02B4B4B2000E150DC /* Sources */,
+				44CA09A12B4B4B2000E150DC /* Frameworks */,
+				44CA09A22B4B4B2000E150DC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				44CA09A92B4B4B2000E150DC /* PBXTargetDependency */,
+			);
+			name = TokenAppTests;
+			productName = TokenAppTests;
+			productReference = 44CA09A42B4B4B2000E150DC /* TokenAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -99,6 +150,10 @@
 				TargetAttributes = {
 					44CA09862B4B3FD700E150DC = {
 						CreatedOnToolsVersion = 15.1;
+					};
+					44CA09A32B4B4B2000E150DC = {
+						CreatedOnToolsVersion = 15.1;
+						TestTargetID = 44CA09862B4B3FD700E150DC;
 					};
 				};
 			};
@@ -116,6 +171,7 @@
 			projectRoot = "";
 			targets = (
 				44CA09862B4B3FD700E150DC /* TokenApp */,
+				44CA09A32B4B4B2000E150DC /* TokenAppTests */,
 			);
 		};
 /* End PBXProject section */
@@ -131,6 +187,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		44CA09A22B4B4B2000E150DC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -139,12 +202,29 @@
 			buildActionMask = 2147483647;
 			files = (
 				44CA098F2B4B3FD700E150DC /* ViewController.swift in Sources */,
+				44CA099F2B4B45BD00E150DC /* Tokenizer.swift in Sources */,
 				44CA098B2B4B3FD700E150DC /* AppDelegate.swift in Sources */,
 				44CA098D2B4B3FD700E150DC /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		44CA09A02B4B4B2000E150DC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44CA09A72B4B4B2000E150DC /* TokenAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		44CA09A92B4B4B2000E150DC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 44CA09862B4B3FD700E150DC /* TokenApp */;
+			targetProxy = 44CA09A82B4B4B2000E150DC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		44CA09902B4B3FD700E150DC /* Main.storyboard */ = {
@@ -292,6 +372,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JNM4HSTKD2;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TokenApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -319,6 +400,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JNM4HSTKD2;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TokenApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -339,6 +421,42 @@
 			};
 			name = Release;
 		};
+		44CA09AB2B4B4B2000E150DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JNM4HSTKD2;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dolludaa.TokenAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TokenApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TokenApp";
+			};
+			name = Debug;
+		};
+		44CA09AC2B4B4B2000E150DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JNM4HSTKD2;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dolludaa.TokenAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TokenApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TokenApp";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -356,6 +474,15 @@
 			buildConfigurations = (
 				44CA099C2B4B3FDA00E150DC /* Debug */,
 				44CA099D2B4B3FDA00E150DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		44CA09AA2B4B4B2000E150DC /* Build configuration list for PBXNativeTarget "TokenAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44CA09AB2B4B4B2000E150DC /* Debug */,
+				44CA09AC2B4B4B2000E150DC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
