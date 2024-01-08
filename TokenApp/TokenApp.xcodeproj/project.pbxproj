@@ -9,12 +9,14 @@
 /* Begin PBXBuildFile section */
 		44CA098B2B4B3FD700E150DC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44CA098A2B4B3FD700E150DC /* AppDelegate.swift */; };
 		44CA098D2B4B3FD700E150DC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44CA098C2B4B3FD700E150DC /* SceneDelegate.swift */; };
-		44CA098F2B4B3FD700E150DC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44CA098E2B4B3FD700E150DC /* ViewController.swift */; };
+		44CA098F2B4B3FD700E150DC /* TokenizerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44CA098E2B4B3FD700E150DC /* TokenizerView.swift */; };
 		44CA09922B4B3FD700E150DC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44CA09902B4B3FD700E150DC /* Main.storyboard */; };
 		44CA09942B4B3FDA00E150DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44CA09932B4B3FDA00E150DC /* Assets.xcassets */; };
 		44CA09972B4B3FDA00E150DC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44CA09952B4B3FDA00E150DC /* LaunchScreen.storyboard */; };
 		44CA099F2B4B45BD00E150DC /* Tokenizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44CA099E2B4B45BD00E150DC /* Tokenizer.swift */; };
 		44CA09A72B4B4B2000E150DC /* TokenAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44CA09A62B4B4B2000E150DC /* TokenAppTests.swift */; };
+		44CA09AF2B4B550500E150DC /* AppColorEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44CA09AE2B4B550500E150DC /* AppColorEnum.swift */; };
+		44CA09B22B4B55DC00E150DC /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44CA09B12B4B55DC00E150DC /* UIColor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,7 +33,7 @@
 		44CA09872B4B3FD700E150DC /* TokenApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TokenApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		44CA098A2B4B3FD700E150DC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		44CA098C2B4B3FD700E150DC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		44CA098E2B4B3FD700E150DC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		44CA098E2B4B3FD700E150DC /* TokenizerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenizerView.swift; sourceTree = "<group>"; };
 		44CA09912B4B3FD700E150DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		44CA09932B4B3FDA00E150DC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		44CA09962B4B3FDA00E150DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -39,6 +41,8 @@
 		44CA099E2B4B45BD00E150DC /* Tokenizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tokenizer.swift; sourceTree = "<group>"; };
 		44CA09A42B4B4B2000E150DC /* TokenAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TokenAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		44CA09A62B4B4B2000E150DC /* TokenAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenAppTests.swift; sourceTree = "<group>"; };
+		44CA09AE2B4B550500E150DC /* AppColorEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColorEnum.swift; sourceTree = "<group>"; };
+		44CA09B12B4B55DC00E150DC /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,9 +84,11 @@
 		44CA09892B4B3FD700E150DC /* TokenApp */ = {
 			isa = PBXGroup;
 			children = (
+				44CA09B02B4B55CF00E150DC /* Extension */,
+				44CA09AD2B4B54F400E150DC /* Entities */,
 				44CA098A2B4B3FD700E150DC /* AppDelegate.swift */,
 				44CA098C2B4B3FD700E150DC /* SceneDelegate.swift */,
-				44CA098E2B4B3FD700E150DC /* ViewController.swift */,
+				44CA098E2B4B3FD700E150DC /* TokenizerView.swift */,
 				44CA09902B4B3FD700E150DC /* Main.storyboard */,
 				44CA09932B4B3FDA00E150DC /* Assets.xcassets */,
 				44CA09952B4B3FDA00E150DC /* LaunchScreen.storyboard */,
@@ -98,6 +104,22 @@
 				44CA09A62B4B4B2000E150DC /* TokenAppTests.swift */,
 			);
 			path = TokenAppTests;
+			sourceTree = "<group>";
+		};
+		44CA09AD2B4B54F400E150DC /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				44CA09AE2B4B550500E150DC /* AppColorEnum.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		44CA09B02B4B55CF00E150DC /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				44CA09B12B4B55DC00E150DC /* UIColor.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -201,9 +223,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				44CA098F2B4B3FD700E150DC /* ViewController.swift in Sources */,
+				44CA098F2B4B3FD700E150DC /* TokenizerView.swift in Sources */,
+				44CA09B22B4B55DC00E150DC /* UIColor.swift in Sources */,
 				44CA099F2B4B45BD00E150DC /* Tokenizer.swift in Sources */,
 				44CA098B2B4B3FD700E150DC /* AppDelegate.swift in Sources */,
+				44CA09AF2B4B550500E150DC /* AppColorEnum.swift in Sources */,
 				44CA098D2B4B3FD700E150DC /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

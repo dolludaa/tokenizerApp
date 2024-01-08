@@ -10,30 +10,30 @@ import Foundation
 import Foundation
 
 class Tokenizer {
-    func tokenize(text: String, language: String) -> [String] {
-        var sentences = [String]()
-        let tokens = text.components(separatedBy: .whitespacesAndNewlines)
+  func tokenize(text: String, language: String) -> [String] {
+    var sentences = [String]()
+    let tokens = text.components(separatedBy: .whitespacesAndNewlines)
 
-        let keywords = language.lowercased() == "spanish" ? ["si", "y"] : ["if", "and"]
+    let keywords = language.lowercased() == "spanish" ? ["si", "y"] : ["if", "and"]
 
-        var currentSentence = ""
-        for token in tokens {
-            if keywords.contains(token.lowercased()) {
-                if !currentSentence.isEmpty {
-                    sentences.append(currentSentence.trimmingCharacters(in: .whitespaces))
-                    currentSentence = ""
-                }
-                currentSentence += token + " "
-            } else {
-                currentSentence += token + " "
-            }
-        }
-
+    var currentSentence = ""
+    for token in tokens {
+      if keywords.contains(token.lowercased()) {
         if !currentSentence.isEmpty {
-            sentences.append(currentSentence.trimmingCharacters(in: .whitespaces))
+          sentences.append(currentSentence.trimmingCharacters(in: .whitespaces))
+          currentSentence = ""
         }
-
-        return sentences
+        currentSentence += token + " "
+      } else {
+        currentSentence += token + " "
+      }
     }
+
+    if !currentSentence.isEmpty {
+      sentences.append(currentSentence.trimmingCharacters(in: .whitespaces))
+    }
+
+    return sentences
+  }
 }
 
