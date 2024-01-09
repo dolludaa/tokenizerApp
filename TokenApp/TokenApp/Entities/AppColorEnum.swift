@@ -10,14 +10,17 @@ import UIKit
 
 enum AppColorEnum {
   case outputText
-  case inpitText
+  case inputText
+  case background
 
   var color: UIColor {
     switch self {
     case .outputText:
-      return UIColor(hex: 0x6FAFC2)
-    case .inpitText:
-      return UIColor(hex: 0xDEDEDE)
+      UIColor(hex: 0x6FAFC2)
+    case .inputText:
+      UIColor(hex: 0xDEDEDE)
+    case .background:
+      UIColor(hex: 0xf3f2f9)
     }
   }
 }

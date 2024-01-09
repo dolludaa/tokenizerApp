@@ -9,14 +9,22 @@
 /* Begin PBXBuildFile section */
 		44CA098B2B4B3FD700E150DC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44CA098A2B4B3FD700E150DC /* AppDelegate.swift */; };
 		44CA098D2B4B3FD700E150DC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44CA098C2B4B3FD700E150DC /* SceneDelegate.swift */; };
-		44CA098F2B4B3FD700E150DC /* TokenizerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44CA098E2B4B3FD700E150DC /* TokenizerView.swift */; };
-		44CA09922B4B3FD700E150DC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44CA09902B4B3FD700E150DC /* Main.storyboard */; };
+		44CA098F2B4B3FD700E150DC /* TokenizerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44CA098E2B4B3FD700E150DC /* TokenizerViewController.swift */; };
 		44CA09942B4B3FDA00E150DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44CA09932B4B3FDA00E150DC /* Assets.xcassets */; };
 		44CA09972B4B3FDA00E150DC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44CA09952B4B3FDA00E150DC /* LaunchScreen.storyboard */; };
 		44CA099F2B4B45BD00E150DC /* Tokenizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44CA099E2B4B45BD00E150DC /* Tokenizer.swift */; };
 		44CA09A72B4B4B2000E150DC /* TokenAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44CA09A62B4B4B2000E150DC /* TokenAppTests.swift */; };
 		44CA09AF2B4B550500E150DC /* AppColorEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44CA09AE2B4B550500E150DC /* AppColorEnum.swift */; };
 		44CA09B22B4B55DC00E150DC /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44CA09B12B4B55DC00E150DC /* UIColor.swift */; };
+		44CA09B52B4CBD5900E150DC /* NonEditableTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44CA09B42B4CBD5900E150DC /* NonEditableTextView.swift */; };
+		44CA09B82B4CBDAE00E150DC /* LanguageDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44CA09B72B4CBDAE00E150DC /* LanguageDetector.swift */; };
+		44CA09BB2B4CBDD500E150DC /* Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44CA09BA2B4CBDD500E150DC /* Language.swift */; };
+		44CA09BD2B4CBF0800E150DC /* TokenizerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44CA09BC2B4CBF0800E150DC /* TokenizerView.swift */; };
+		44CA09C02B4CC08600E150DC /* TokenizerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44CA09BF2B4CC08600E150DC /* TokenizerProtocol.swift */; };
+		44CA09C22B4CC0A500E150DC /* LanguageDetectorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44CA09C12B4CC0A500E150DC /* LanguageDetectorProtocol.swift */; };
+		44CA09C42B4CC2C800E150DC /* TokenizerViewControllerAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44CA09C32B4CC2C800E150DC /* TokenizerViewControllerAssembly.swift */; };
+		44CA09C82B4CC3BD00E150DC /* TokenizerViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44CA09C72B4CC3BD00E150DC /* TokenizerViewProtocol.swift */; };
+		44CA09CA2B4CC3CF00E150DC /* TokenizerViewProtocolDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44CA09C92B4CC3CE00E150DC /* TokenizerViewProtocolDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,8 +41,7 @@
 		44CA09872B4B3FD700E150DC /* TokenApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TokenApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		44CA098A2B4B3FD700E150DC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		44CA098C2B4B3FD700E150DC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		44CA098E2B4B3FD700E150DC /* TokenizerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenizerView.swift; sourceTree = "<group>"; };
-		44CA09912B4B3FD700E150DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		44CA098E2B4B3FD700E150DC /* TokenizerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenizerViewController.swift; sourceTree = "<group>"; };
 		44CA09932B4B3FDA00E150DC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		44CA09962B4B3FDA00E150DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		44CA09982B4B3FDA00E150DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -43,6 +50,15 @@
 		44CA09A62B4B4B2000E150DC /* TokenAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenAppTests.swift; sourceTree = "<group>"; };
 		44CA09AE2B4B550500E150DC /* AppColorEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColorEnum.swift; sourceTree = "<group>"; };
 		44CA09B12B4B55DC00E150DC /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		44CA09B42B4CBD5900E150DC /* NonEditableTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NonEditableTextView.swift; sourceTree = "<group>"; };
+		44CA09B72B4CBDAE00E150DC /* LanguageDetector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageDetector.swift; sourceTree = "<group>"; };
+		44CA09BA2B4CBDD500E150DC /* Language.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Language.swift; sourceTree = "<group>"; };
+		44CA09BC2B4CBF0800E150DC /* TokenizerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenizerView.swift; sourceTree = "<group>"; };
+		44CA09BF2B4CC08600E150DC /* TokenizerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenizerProtocol.swift; sourceTree = "<group>"; };
+		44CA09C12B4CC0A500E150DC /* LanguageDetectorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageDetectorProtocol.swift; sourceTree = "<group>"; };
+		44CA09C32B4CC2C800E150DC /* TokenizerViewControllerAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenizerViewControllerAssembly.swift; sourceTree = "<group>"; };
+		44CA09C72B4CC3BD00E150DC /* TokenizerViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenizerViewProtocol.swift; sourceTree = "<group>"; };
+		44CA09C92B4CC3CE00E150DC /* TokenizerViewProtocolDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenizerViewProtocolDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,16 +100,17 @@
 		44CA09892B4B3FD700E150DC /* TokenApp */ = {
 			isa = PBXGroup;
 			children = (
+				44CA09B92B4CBDCE00E150DC /* Models */,
+				44CA09B62B4CBD9700E150DC /* Services */,
+				44CA09B32B4CBD4C00E150DC /* CommonViews */,
 				44CA09B02B4B55CF00E150DC /* Extension */,
 				44CA09AD2B4B54F400E150DC /* Entities */,
+				44CA09C52B4CC39400E150DC /* TokenizerFlow */,
 				44CA098A2B4B3FD700E150DC /* AppDelegate.swift */,
 				44CA098C2B4B3FD700E150DC /* SceneDelegate.swift */,
-				44CA098E2B4B3FD700E150DC /* TokenizerView.swift */,
-				44CA09902B4B3FD700E150DC /* Main.storyboard */,
 				44CA09932B4B3FDA00E150DC /* Assets.xcassets */,
 				44CA09952B4B3FDA00E150DC /* LaunchScreen.storyboard */,
 				44CA09982B4B3FDA00E150DC /* Info.plist */,
-				44CA099E2B4B45BD00E150DC /* Tokenizer.swift */,
 			);
 			path = TokenApp;
 			sourceTree = "<group>";
@@ -120,6 +137,61 @@
 				44CA09B12B4B55DC00E150DC /* UIColor.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		44CA09B32B4CBD4C00E150DC /* CommonViews */ = {
+			isa = PBXGroup;
+			children = (
+				44CA09B42B4CBD5900E150DC /* NonEditableTextView.swift */,
+			);
+			path = CommonViews;
+			sourceTree = "<group>";
+		};
+		44CA09B62B4CBD9700E150DC /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				44CA09BE2B4CC07500E150DC /* Contracts */,
+				44CA099E2B4B45BD00E150DC /* Tokenizer.swift */,
+				44CA09B72B4CBDAE00E150DC /* LanguageDetector.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		44CA09B92B4CBDCE00E150DC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				44CA09BA2B4CBDD500E150DC /* Language.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		44CA09BE2B4CC07500E150DC /* Contracts */ = {
+			isa = PBXGroup;
+			children = (
+				44CA09BF2B4CC08600E150DC /* TokenizerProtocol.swift */,
+				44CA09C12B4CC0A500E150DC /* LanguageDetectorProtocol.swift */,
+			);
+			path = Contracts;
+			sourceTree = "<group>";
+		};
+		44CA09C52B4CC39400E150DC /* TokenizerFlow */ = {
+			isa = PBXGroup;
+			children = (
+				44CA09C62B4CC3B200E150DC /* Contracts */,
+				44CA09BC2B4CBF0800E150DC /* TokenizerView.swift */,
+				44CA098E2B4B3FD700E150DC /* TokenizerViewController.swift */,
+				44CA09C32B4CC2C800E150DC /* TokenizerViewControllerAssembly.swift */,
+			);
+			path = TokenizerFlow;
+			sourceTree = "<group>";
+		};
+		44CA09C62B4CC3B200E150DC /* Contracts */ = {
+			isa = PBXGroup;
+			children = (
+				44CA09C72B4CC3BD00E150DC /* TokenizerViewProtocol.swift */,
+				44CA09C92B4CC3CE00E150DC /* TokenizerViewProtocolDelegate.swift */,
+			);
+			path = Contracts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -205,7 +277,6 @@
 			files = (
 				44CA09972B4B3FDA00E150DC /* LaunchScreen.storyboard in Resources */,
 				44CA09942B4B3FDA00E150DC /* Assets.xcassets in Resources */,
-				44CA09922B4B3FD700E150DC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -223,12 +294,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				44CA098F2B4B3FD700E150DC /* TokenizerView.swift in Sources */,
+				44CA098F2B4B3FD700E150DC /* TokenizerViewController.swift in Sources */,
+				44CA09B52B4CBD5900E150DC /* NonEditableTextView.swift in Sources */,
+				44CA09BD2B4CBF0800E150DC /* TokenizerView.swift in Sources */,
 				44CA09B22B4B55DC00E150DC /* UIColor.swift in Sources */,
+				44CA09BB2B4CBDD500E150DC /* Language.swift in Sources */,
+				44CA09C22B4CC0A500E150DC /* LanguageDetectorProtocol.swift in Sources */,
 				44CA099F2B4B45BD00E150DC /* Tokenizer.swift in Sources */,
+				44CA09C42B4CC2C800E150DC /* TokenizerViewControllerAssembly.swift in Sources */,
+				44CA09CA2B4CC3CF00E150DC /* TokenizerViewProtocolDelegate.swift in Sources */,
+				44CA09C82B4CC3BD00E150DC /* TokenizerViewProtocol.swift in Sources */,
 				44CA098B2B4B3FD700E150DC /* AppDelegate.swift in Sources */,
+				44CA09C02B4CC08600E150DC /* TokenizerProtocol.swift in Sources */,
 				44CA09AF2B4B550500E150DC /* AppColorEnum.swift in Sources */,
 				44CA098D2B4B3FD700E150DC /* SceneDelegate.swift in Sources */,
+				44CA09B82B4CBDAE00E150DC /* LanguageDetector.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,14 +331,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		44CA09902B4B3FD700E150DC /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				44CA09912B4B3FD700E150DC /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		44CA09952B4B3FDA00E150DC /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -401,7 +473,6 @@
 				INFOPLIST_FILE = TokenApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -429,7 +500,6 @@
 				INFOPLIST_FILE = TokenApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

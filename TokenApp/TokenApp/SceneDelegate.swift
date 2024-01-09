@@ -12,13 +12,13 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
   var window: UIWindow?
 
   func scene( _ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
-      guard let windowScene = (scene as? UIWindowScene) else { return }
-      let tokenVC = TokenizerView()
-      let window = UIWindow(windowScene: windowScene)
-      window.rootViewController = tokenVC
+    guard let windowScene = (scene as? UIWindowScene) else { return }
+    let tokenVC = TokenizerViewControllerAssembly().create()
+    let window = UIWindow(windowScene: windowScene)
+    window.rootViewController = tokenVC
 
-      self.window = window
-      window.makeKeyAndVisible()
-    }
+    self.window = window
+    window.makeKeyAndVisible()
+  }
 }
 
